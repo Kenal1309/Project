@@ -5,7 +5,7 @@ import Form from './Components/Form';
 import Navbar from './Components/Navbar';
 import Alert from './Components/Alert';
 import {
-  BrowserRouter as Main, Route, Routes, Link} from "react-router-dom";
+  BrowserRouter as Main, Route, Routes} from "react-router-dom";
 
 
 function App() {
@@ -41,10 +41,9 @@ function App() {
 {/* <About mode={mode} /> */}
 <Alert alert={alert} />
 {/* <Form heading="Please Enter Your Text For Analysize Below " mode={mode} showAlert={showAlert}/> */}
-          <Link></Link>
           <Routes>
           <Route exact path="/About" element={ <About mode={mode} />} />
-          <Route exact path="/" element={<Form heading="Please Enter Your Text For Analysize Below " mode={mode} showAlert={showAlert}/>} />
+          <Route exact path="/project" element={<Form heading="Please Enter Your Text For Analysize Below " mode={mode} showAlert={showAlert}/>} />
          </Routes>
 </Main>
 </>
